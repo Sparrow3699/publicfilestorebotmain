@@ -74,16 +74,10 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/TGRobot_List")
+                        InlineKeyboardButton("Adult Films", url="https://t.me/AdultFilmsPlus")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
-                    ],
-                    [
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
-                        InlineKeyboardButton(" Support Group", url="https://t.me/TeleRoid14")
+                        InlineKeyboardButton("🪜 Close", callback_data="closeMessage")
                     ]
                 ]
             )
@@ -318,8 +312,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                        InlineKeyboardButton("Adult Films", url="https://t.me/AdultFilmsPlus")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -336,8 +329,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                        InlineKeyboardButton("Adult Films", url="https://t.me/AdultFilmsPlus")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -354,16 +346,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/PayForBotz")
+                        InlineKeyboardButton("Adult Films", url="https://t.me/AdultFilmsPlus")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                         InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
-                    ],
-                    [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
                     ]
                 ]
             )
@@ -401,7 +389,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/AdultFilmsPlus).",
                     disable_web_page_preview=True
                 )
                 return
@@ -411,8 +399,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                        InlineKeyboardButton("Adult Films", url="https://t.me/AdultFilmsPlus")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
