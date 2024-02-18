@@ -33,7 +33,15 @@ I'm [Telugu Store Pro Bot](https://t.me/TeluguStorePro_bot)
 BYE
 """
 	HOME_TEXT = """
-Hi There 🤗, [{}](tg://user?id={})
+ Hi 🤗, [{}](tg://user?id={})
+ 
+🌟 **I'm [Telugu Store Pro Bot](https://t.me/TeluguStorePro_bot)**
 
-🌟 I'm **File Store Pro Bot**
+✨ **Powered By : [Adult Films](https://t.me/AdultFilmsPlus)**
+
+☀️ **Files Will Be Deleted In 1Hr Due To Copyrights**
+
+🌊 **Make Sure To Download (or) Forward Files Before They Deleted**
+
+
 """
