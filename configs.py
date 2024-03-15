@@ -39,7 +39,7 @@ BYE
 
 ✨ **Powered By : [Adult Films](https://t.me/AdultFilmsPlus)**
 
-☀️ **Files Will Be Deleted In 1Hr Due To Copyrights**
+☀️ **Files Will Be Deleted In **10 Mins** Due To Copyrights**
 
 🌊 **Make Sure To Download (or) Forward Files Before They Deleted**
 
