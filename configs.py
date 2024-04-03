@@ -12,7 +12,7 @@ class Config(object):
 	BOT_OWNER = 5847742709
 	DATABASE_URL = "mongodb+srv://srj726811:srj726811@cluster0.rvootx1.mongodb.net/?retryWrites=true&w=majority"
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
-	LOG_CHANNEL = -1001997939827
+	LOG_CHANNEL = -1002063214508
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
