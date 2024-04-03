@@ -4,13 +4,13 @@ import os
 
 
 class Config(object):
-	API_ID = 15682957
-	API_HASH = "00b8b3714cee0ba2941091b7cc5578e7"
-	BOT_TOKEN = "6518879488:AAFtd_jX7l-sblE7bVhU9p4Gdj47tmIan2o"
-	BOT_USERNAME = "TeluguStorePro_bot"
-	DB_CHANNEL = -1002102557194
-	BOT_OWNER = 1098983599
-	DATABASE_URL = "mongodb+srv://TeluguMoviesFilter:TeluguMoviesFilter@cluster0.tbhnl1n.mongodb.net/?retryWrites=true&w=majority"
+	API_ID = 27501733
+	API_HASH = "687b5c7656849e9a3b125d691f824497"
+	BOT_TOKEN = "6672694453:AAEznfVE1d-5dwFpFwHBOkchfViet9V8S2g"
+	BOT_USERNAME = "FileStore_4GB_bot"
+	DB_CHANNEL = -1001920799623
+	BOT_OWNER = 5847742709
+	DATABASE_URL = "mongodb+srv://srj726811:srj726811@cluster0.rvootx1.mongodb.net/?retryWrites=true&w=majority"
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
 	LOG_CHANNEL = -1001997939827
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
@@ -19,7 +19,7 @@ class Config(object):
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = [int(id) for id in os.environ.get("OTHER_USERS_CAN_SAVE_FILE", "").split(",") if id.strip()]
 	ABOUT_BOT_TEXT = f"""
-I'm [Telugu Store Pro Bot](https://t.me/TeluguStorePro_bot)
+I'm [File Store 4GB bot](https://t.me/FileStore_4GB_bot)
 
 🌠 Send Me Any Video (or) File , Then I'll Save It To My Database And I'll Give Shareable Link To You....
 
@@ -35,9 +35,9 @@ BYE
 	HOME_TEXT = """
  Hi 🤗, [{}](tg://user?id={})
  
-🌟 **I'm [Telugu Store Pro Bot](https://t.me/TeluguStorePro_bot)**
+🌟 **I'm [File Store 4GB bot](https://t.me/FileStore_4GB_bot)**
 
-✨ **Powered By : [Adult Films](https://t.me/AdultFilmsPlus)**
+✨ **Powered By : [FileStorerobotUpdates](https://t.me/FileStorerobotUpdates)**
 
 ☀️ **Files Will Be Deleted In 10 Mins Due To Copyrights**
 
