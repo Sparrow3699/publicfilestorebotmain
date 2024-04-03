@@ -37,7 +37,7 @@ BYE
  
 🌟 **I'm [File Store 4GB bot](https://t.me/FileStore_4GB_bot)**
 
-✨ **Powered By : [FileStorerobotUpdates](https://t.me/FileStorerobotUpdates)**
+✨ **Powered By : [FileStorebotUpdates](https://t.me/FileStorebotUpdates)**
 
 ☀️ **Files Will Be Deleted In 10 Mins Due To Copyrights**
 
