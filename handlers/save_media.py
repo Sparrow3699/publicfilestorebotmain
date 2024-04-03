@@ -32,13 +32,8 @@ async def forward_to_channel(bot: Client, message: Message, editable: Message):
 
 async def save_batch_media_in_channel(bot: Client, editable: Message, message_ids: list):
     try:
-         if editable.reply_to_message.from_user.id not in Config.OTHER_USERS_CAN_SAVE_FILE:
-            await editable.reply_text("You are not authorized to save files.")
-            return
-             
         message_ids_str = ""
-        for message_id in message_ids:
-            message = await bot.get_messages(chat_id=editable.chat.id, message_ids=message_id)
+        for message in (await bot.get_messages(chat_id=editable.chat.id, message_ids=message_ids)):
             sent_message = await forward_to_channel(bot, message, editable)
             if sent_message is None:
                 continue
@@ -52,13 +47,13 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
                 InlineKeyboardButton("Delete Batch", callback_data="closeMessage")
             ]])
         )
-        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=FileStore_{str_to_b64(str(SaveMessage.id))}"
+        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=TeluguStorePro_{str_to_b64(str(SaveMessage.id))}"
         await editable.edit(
             f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n"
             f"Just Click the link to get your files!",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("FileStorebotUpdates", url="https://t.me/FileStorebotUpdates")]]
+                 [InlineKeyboardButton("Adult Films", url="https://t.me/AdultFilmsPlus")]]
             ),
             disable_web_page_preview=True
         )
@@ -84,22 +79,19 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
 
 async def save_media_in_channel(bot: Client, editable: Message, message: Message):
     try:
-        if message.from_user.id not in Config.OTHER_USERS_CAN_SAVE_FILE:
-            await editable.reply_text("You are not authorized to save files.")
-            return
         forwarded_msg = await message.forward(Config.DB_CHANNEL)
         file_er_id = str(forwarded_msg.id)
         await forwarded_msg.reply_text(
             f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!",
             disable_web_page_preview=True)
-        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=FileStore_{str_to_b64(file_er_id)}"
+        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=TeluguStorePro_{str_to_b64(file_er_id)}"
         await editable.edit(
             "**Your File Stored in my Database!**\n\n"
             f"Here is the Permanent Link of your file: {share_link} \n\n"
             "Just Click the link to get your file!",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("FileStorebotUpdates", url="https://t.me/FileStorebotUpdates")]]
+                 [InlineKeyboardButton("Adult Films", url="https://t.me/AdultFilmsPlus")]]
             ),
             disable_web_page_preview=True
         )
